@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>重力手绘 - 技术支持</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            text-align: center;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            margin-bottom: 20px;
+        }
+
+        .nav-links {
+            margin-top: 20px;
+        }
+
+        .nav-links a {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: transform 0.3s ease;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            transform: scale(1.05);
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .card h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .card h3 {
+            color: #34495e;
+            margin: 20px 0 10px 0;
+            font-size: 1.2rem;
+        }
+
+        .contact-info {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-item {
+            display: inline-block;
+            margin: 10px 20px;
+            padding: 15px 25px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: transform 0.3s ease;
+            font-weight: 500;
+        }
+
+        .contact-item:hover {
+            transform: scale(1.05);
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            padding: 20px;
+            background: rgba(248, 249, 250, 0.8);
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .faq-answer {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .feature-list {
+            list-style: none;
+        }
+
+        .feature-list li {
+            padding: 8px 0;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .feature-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #27ae60;
+            font-weight: bold;
+        }
+
+        .icon {
+            font-size: 1.5rem;
+            color: #667eea;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .header {
+                padding: 20px;
+            }
+            
+            .logo {
+                font-size: 2rem;
+            }
+            
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-item {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">🎨 重力手绘</div>
+            <div class="subtitle">专业iPad设计工具 - 技术支持中心</div>
+            <div class="nav-links">
+                <a href="../index.html">📄 隐私政策</a>
+                <a href="mailto:690536756@qq.com">📧 邮箱支持</a>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="card">
+                <h2><span class="icon">📱</span>应用功能</h2>
+                <ul class="feature-list">
+                    <li>专业iPad设计工具</li>
+                    <li>丰富的课程和素材库</li>
+                    <li>实时聊天技术支持</li>
+                    <li>文件管理和分享功能</li>
+                    <li>云端同步和备份</li>
+                    <li>多设备数据同步</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2><span class="icon">❓</span>常见问题</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q: 如何开始使用重力手绘？</div>
+                    <div class="faq-answer">A: 下载应用后，按照引导完成注册，即可开始使用所有功能。新用户有免费试用期。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Q: 支持哪些设备？</div>
+                    <div class="faq-answer">A: 支持iPad（iOS 12.0及以上版本），推荐使用iPad Pro获得最佳体验。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Q: 如何恢复购买内容？</div>
+                    <div class="faq-answer">A: 在设置中点击"恢复购买"，系统会自动恢复您之前购买的所有内容。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Q: 数据会丢失吗？</div>
+                    <div class="faq-answer">A: 不会，所有数据都会自动同步到云端，更换设备后可以恢复。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Q: 如何联系客服？</div>
+                    <div class="faq-answer">A: 可以通过应用内聊天、QQ或邮箱联系我们，7×24小时在线服务。</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2><span class="icon">🔧</span>使用指南</h2>
+                
+                <h3>📚 课程学习</h3>
+                <p>在"课程"页面选择您感兴趣的课程，按照视频教程学习专业设计技巧。</p>
+                
+                <h3>🎨 素材使用</h3>
+                <p>在"素材"页面浏览和下载各种设计素材，支持导入到其他设计软件。</p>
+                
+                <h3>💬 技术支持</h3>
+                <p>遇到问题时，点击"ME"页面的客服按钮，获得实时技术支持。</p>
+                
+                <h3>📁 文件管理</h3>
+                <p>使用文件管理器整理您的作品，支持云端备份和分享功能。</p>
+            </div>
+
+            <div class="card">
+                <h2><span class="icon">⚙️</span>系统要求</h2>
+                
+                <h3>设备要求</h3>
+                <ul class="feature-list">
+                    <li>iPad（iOS 12.0或更高版本）</li>
+                    <li>推荐iPad Pro获得最佳体验</li>
+                    <li>至少2GB可用存储空间</li>
+                </ul>
+                
+                <h3>网络要求</h3>
+                <ul class="feature-list">
+                    <li>稳定的网络连接</li>
+                    <li>建议WiFi环境使用</li>
+                    <li>支持4G/5G网络</li>
+                </ul>
+                
+                <h3>权限要求</h3>
+                <ul class="feature-list">
+                    <li>相机权限（拍照功能）</li>
+                    <li>相册权限（保存图片）</li>
+                    <li>文件访问权限</li>
+                    <li>网络访问权限</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="contact-info">
+            <h2><span class="icon">📞</span>联系我们</h2>
+            <p style="margin-bottom: 30px; color: #666;">我们提供7×24小时技术支持服务</p>
+            
+            <a href="mailto:690536756@qq.com" class="contact-item">
+                📧 邮箱支持
+            </a>
+            
+            <a href="https://qm.qq.com/cgi-bin/qm/qr?k=your_qq_code" class="contact-item">
+                💬 QQ客服
+            </a>
+            
+            <a href="../index.html" class="contact-item">
+                📄 隐私政策
+            </a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2024 重力手绘. 保留所有权利.</p>
+        <p>专业iPad设计工具 | 让创意无限可能</p>
+    </div>
+</body>
+</html> 
